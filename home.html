@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Caderneta Digital</title>
+    <!-- Importando a fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html" class="active">Início</a></li>
+            <li><a href="anotacoes.html">Minhas Anotações</a></li>
+            <li><a href="configuracao.html" >Configurações</a></li>
+            <li><a href="index.html">Sair</a></li>
+          </ul>
+    </nav>
+
+    <div class="home-container">
+        <h1>Bem-vindo à Caderneta Digital!</h1>
+        <p>Suas Anotações:</p>
+        
+        <textarea id="noteInput" placeholder="Digite sua anotação aqui..."></textarea>
+        <button id="saveNoteButton">Salvar Anotação</button>
+
+        <div id="notesContainer">
+            <!-- As anotações salvas serão exibidas aqui -->
+        </div>
+
+        <h3>Gerar Anotação com GPT</h3>
+        <textarea id="gptInput" placeholder="Peça ao GPT para gerar ou melhorar a anotação..."></textarea>
+        <button id="gptGenerateButton">Gerar Anotação</button>
+        <p id="gptResponse"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
